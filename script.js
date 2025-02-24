@@ -49,7 +49,7 @@ const showInvite = (userData) => {
         <label for="link">
           <img src="link.svg" alt="Link icon">
         </label>
-        <input type="text" id="link" value="https://evento.com?ref=${userData.ref}" disabled>
+        <input type="text" id="link" value="https://devstage.com?ref=${userData.ref}" disabled>
 
       </div>
     </main>
