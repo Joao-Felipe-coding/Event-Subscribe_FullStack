@@ -12,12 +12,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>NLW Connect - Devstage</title>
+    <title>Devstage</title>
 
     <link rel="stylesheet" href="style.css">
+    <style>
+    /* Oculta o conteúdo até que os estilos sejam carregados */
+    body.loading {
+      visibility: hidden;
+    }
+  </style>
 </head>
 
-<body>
+<body class="loading">
     <div id="container">
         <header>
             <img src="logo.svg" class="logo" alt="Logo">
@@ -31,6 +37,12 @@
     </div>
 
     <script src="./script.js"></script>
+    <script>
+    // Remove a classe "loading" após o carregamento completo
+    window.addEventListener('load', () => {
+      document.body.classList.remove('loading');
+    });
+  </script>
 </body>
 
 </html>
