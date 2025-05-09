@@ -11,7 +11,7 @@ button {
 }
 
 body {
-    background: url("https://raw.githubusercontent.com/maykbrito/my-public-files/main/nlw-19/bg.jpg") no-repeat center/cover;
+    background: url("./bg.png") no-repeat center/cover;
     min-height: 100vh;
     color: #E1E1E6;
     display: grid;
