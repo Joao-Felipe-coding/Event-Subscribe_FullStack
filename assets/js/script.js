@@ -47,7 +47,7 @@ const showInvite = (userData) => {
 
       <div class="input-group">
         <label for="link">
-          <img src="link.svg" alt="Link icon">
+          <img src="./assets/images/icons/link.svg" alt="Link icon">
         </label>
         <input type="text" id="link" value="https://devstage.com?ref=${userData.ref}" disabled>
 
@@ -65,7 +65,6 @@ const showInvite = (userData) => {
     </section>
     `
     app.setAttribute("class", "page-invite")
-    updateImageLinks()
 }
 
 const saveUser = (userData) => {
@@ -101,16 +100,6 @@ const formAction = () => {
     }
 }
 
-const updateImageLinks = () => {
-  const images = document.querySelectorAll('img');
-  for (const img of images) {
-    const src = img.getAttribute("src");
-    if (src && !src.startsWith("http")) {
-      img.src = `https://raw.githubusercontent.com/maykbrito/my-public-files/main/nlw-19/${src}`;
-    }
-  }
-};
-
 const startApp = () => {
     const content = `
     <main>
@@ -135,14 +124,14 @@ const startApp = () => {
         <div class="input-wrapper">
           <div class="input-group">
             <label for="email">
-              <img src="mail.svg" alt="Email icon">
+              <img src="./assets/images/icons/mail.svg" alt="Email icon">
             </label>
             <input type="email" id="email" name="email" placeholder="E-mail">
           </div>
 
           <div class="input-group">
             <label for="phone">
-              <img src="phone.svg" alt="Phone icon">
+              <img src="./assets/images/icons/phone.svg" alt="Phone icon">
             </label>
             <input type="text" id="phone" name="phone" placeholder="Telefone">
           </div>
@@ -150,7 +139,7 @@ const startApp = () => {
 
         <button>
           Confirmar
-          <img src="arrow.svg" alt="Arrow right">
+          <img src="./assets/images/icons/arrow.svg" alt="Arrow right">
         </button>
       </form>
     </section>
@@ -158,7 +147,6 @@ const startApp = () => {
 `
     app.innerHTML = content;
     app.setAttribute('class', 'page-start')
-    updateImageLinks()
     formAction()
 }
 startApp()
