@@ -180,7 +180,7 @@ h3 {
     display: block;
     width: 100%;
     height: 100%;
-    background: url("./verify.svg") no-repeat;
+    background: url("../images/icons/verify.svg") no-repeat;
     position: absolute;
     top: .5rem;
     left: .5rem;
