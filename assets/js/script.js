@@ -126,14 +126,14 @@ const startApp = () => {
             <label for="email">
               <img src="./assets/images/icons/mail.svg" alt="Email icon">
             </label>
-            <input type="email" id="email" name="email" placeholder="E-mail">
+            <input type="email" id="email" name="email" placeholder="E-mail" required>
           </div>
 
           <div class="input-group">
             <label for="phone">
               <img src="./assets/images/icons/phone.svg" alt="Phone icon">
             </label>
-            <input type="text" id="phone" name="phone" placeholder="Telefone">
+            <input type="text" id="phone" name="phone" placeholder="Telefone" required>
           </div>
         </div>
 
