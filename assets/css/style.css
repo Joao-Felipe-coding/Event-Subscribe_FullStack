@@ -11,7 +11,7 @@ button {
 }
 
 body {
-    background: url("../images/bg.png") no-repeat center/cover;
+    background: url("../images/bg.png") no-repeat center/cover, #13161B;
     min-height: 100vh;
     color: #E1E1E6;
     display: grid;
