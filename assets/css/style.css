@@ -81,7 +81,7 @@ h2 {
     display: block;
     width: 1.4rem;
     height: 1.4rem;
-    background: url("./radio.svg") no-repeat center;
+    background: url("../images/icons/radio.svg") no-repeat center;
 }
 
 p {
